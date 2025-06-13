@@ -1,0 +1,12 @@
+[
+    {
+        "id": "bucuresti-centru",
+        "name": "Bucuresti Centru",
+        "description": "Acopera partea de centru a Bucurestiului",
+        "locationIds": [
+            "bucuresti-lipscani",
+            "bucuresti-pipera",
+            "bucuresti-universitate"
+        ]
+    }
+]

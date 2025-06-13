@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Donation Boxes Map</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
+      crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" 
+      crossorigin=""></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div data-route-selector class="route-overlay hidden">
+      <h2>Select a route</h2>
+      <ul data-route-list></ul>
+    </div>
+    <div data-location-panel class="hidden">
+      <h2 data-location-title></h2>
+      <p data-location-address></p>
+      <p data-location-description></p>
+      <a data-location-waze target="_blank">Open in Waze</a>
+      <img data-location-image />
+      <button data-location-prev>Previous</button>
+      <button data-location-next>Next</button>
+      <button data-location-toggle></button>
+    </div>
+    <script type="module" src="/static/js/index.js"></script>
+  </body>
+</html>

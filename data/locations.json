@@ -1,0 +1,35 @@
+{
+    "bucuresti-lipscani": {
+        "name": "Lipscani Donation Box",
+        "address": "Strada Lipscani 20, București",
+        "coordinates": {
+            "lat": 44.4325,
+            "lng": 26.1039
+        },
+        "description": "Located near the historic center, easily accessible.",
+        "wazeLink": "https://waze.com/ul/hjkdhfkjhdfk",
+        "image": "lipscani-box.jpg"
+    },
+    "bucuresti-pipera": {
+        "name": "Pipera Office Park Donation Box",
+        "address": "Bulevardul Dimitrie Pompeiu 6A, București",
+        "coordinates": {
+            "lat": 44.4751,
+            "lng": 26.1118
+        },
+        "description": "Accessible within the Pipera business district.",
+        "wazeLink": "https://waze.com/ul/khsdkfhskhfj",
+        "image": "pipera-box.jpg"
+    },
+    "bucuresti-universitate": {
+        "name": "University Square Donation Box",
+        "address": "Piața Universității, București",
+        "coordinates": {
+            "lat": 44.4361,
+            "lng": 26.1009
+        },
+        "description": "Centrally located at University Square.",
+        "wazeLink": "https://waze.com/ul/fjlkasdjfl",
+        "image": "universitate-box.jpg"
+    }
+}
