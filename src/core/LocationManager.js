@@ -54,4 +54,14 @@ export class LocationManager {
     getActive() {
         return this.locations[this.activeIndex];
     }
+
+    resetProgress() {
+        if (!confirm("Are you sure you want to reset all progress?")) return;
+
+        for (const loc of this.locations) {
+            loc.unsetCompleted();
+        }
+
+        this.setActive(0);
+    }
 }

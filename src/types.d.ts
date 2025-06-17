@@ -1,8 +1,19 @@
-// types/global.d.ts
+// types.d.ts
 
 export { };
 
+import type { LocationEntity } from "./core/LocationEntity.js"
+
 declare global {
+    /**
+     * Array of location IDs based on route.
+     */
+    interface Route {
+        id: string;
+        name: string;
+        locationIds: string[];
+    }
+
     /**
      * Coordinates for a location.
      */
@@ -31,23 +42,8 @@ declare global {
     }
 
     /**
-     * Map of location ID to RawLocation
+     * Events for LocationEntity
      */
-    type LocationMap = Record<string, RawLocation>;
-
-    /**
-     * Map of completed location IDs
-     */
-    type CompletedMap = Record<string, true>;
-
-    /**
-     * A route made up of location IDs.
-     */
-    interface Route {
-        id: string;
-        name: string;
-        locationIds: string[];
-    }
     interface DocumentEventMap {
         'location:selected': CustomEvent<LocationEntity>;
         'location:statusChanged': CustomEvent<LocationEntity>;

@@ -19,7 +19,7 @@ export function getSavedRouteId() {
 }
 
 /**
- * @returns {CompletedMap} - Map of completed location IDs
+ * @returns {Object.<string, boolean>} - Map of completed location IDs
  */
 export function getCompletedLocations() {
     return JSON.parse(localStorage.getItem(COMPLETED_KEY) || '{}');
@@ -36,14 +36,15 @@ export function isLocationCompleted(id) {
 
 /**
  * @param {string} id - Location ID
+ * @param {boolean} value - Whether the location should be completed
  * @returns {void}
  */
-export function toggleLocationCompleted(id) {
+export function setLocationCompleted(id, value) {
     const data = getCompletedLocations();
-    if (data[id]) {
-        delete data[id];
-    } else {
+    if (value) {
         data[id] = true;
+    } else {
+        delete data[id];
     }
     localStorage.setItem(COMPLETED_KEY, JSON.stringify(data));
 }

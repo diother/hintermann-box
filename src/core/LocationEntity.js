@@ -1,6 +1,6 @@
 // @ts-check
 
-import { isLocationCompleted, toggleLocationCompleted } from "../utils/storage.js";
+import { isLocationCompleted, setLocationCompleted } from "../utils/storage.js";
 import { addLocationMarker } from "./MapController.js";
 
 export class LocationEntity {
@@ -22,7 +22,13 @@ export class LocationEntity {
 
     toggleCompleted() {
         this.completed = !this.completed;
-        toggleLocationCompleted(this.data.id);
+        setLocationCompleted(this.data.id, this.completed);
+        this.emit('statusChanged');
+    }
+
+    unsetCompleted() {
+        this.completed = false;
+        setLocationCompleted(this.data.id, false);
         this.emit('statusChanged');
     }
 

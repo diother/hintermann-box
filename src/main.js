@@ -3,7 +3,7 @@
 import { LocationEntity } from "./core/LocationEntity.js";
 import { LocationManager } from "./core/LocationManager.js";
 import { initMap } from "./core/MapController.js";
-import { showRoutePrompt } from "./ui/showRoutePrompt.js";
+import { showRoutePrompt } from "./ui/ui.js";
 import { loadLocations, loadRoutes } from "./utils/dataLoader.js";
 import { getSavedRouteId, saveRouteId } from "./utils/storage.js";
 
@@ -50,9 +50,9 @@ async function initApp(routeId, routes) {
 
     const manager = new LocationManager(entities);
 
-    entities.forEach(loc => loc.initMarker());
-
     initMap(() => manager.setActive(0));
+
+    entities.forEach(loc => loc.initMarker());
 }
 
 main();

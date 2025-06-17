@@ -1,6 +1,13 @@
 // @ts-check 
 
 /**
+ * @typedef {Object} Route - Array of location IDs
+ * @property {string} id
+ * @property {string} name
+ * @property {string[]} locationIds
+ */
+
+/**
  * Loads all routes from a JSON file.
  * @returns {Promise<Route[]>}
  */
@@ -12,7 +19,7 @@ export async function loadRoutes() {
 
 /**
  * Loads all locations from a JSON file.
- * @returns {Promise<LocationMap>}
+ * @returns {Promise<Object.<string, RawLocation>>} - Map of location Id to RawLocation
  */
 export async function loadLocations() {
     const res = await fetch('/data/locations.json');
