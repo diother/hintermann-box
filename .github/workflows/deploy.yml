@@ -1,0 +1,32 @@
+name: Deploy Static Box to VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Clean target dir on VPS
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.CD_HOST }}
+        username: ubuntu
+        key: ${{ secrets.CD_SSH_KEY }}
+        script: |
+          rm -rf /var/www/box.hintermann.ro/*
+
+    - name: Copy static files to VPS
+      uses: appleboy/scp-action@v0.1.3
+      with:
+        host: ${{ secrets.CD_HOST }}
+        username: ubuntu
+        key: ${{ secrets.CD_SSH_KEY }}
+        source: "**/*"
+        target: "/var/www/box.hintermann.ro/"
