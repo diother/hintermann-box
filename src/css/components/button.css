@@ -3,7 +3,7 @@
     --button-color-fg: var(--color-fg-inverse);
     --button-color-border: var(--color-secondary);
     --button-color-hover: var(--button-color-bg) / 0.9;
-    --button-font-size: var(--font-size-sm);
+    --button-font-size: var(--font-size-base);
     --button-font: var(--font-body);
 
     display: flex;
@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     gap: var(--space-2);
-    height: 30px;
+    height: var(--space-10);
     width: fit-content;
     font-family: var(--button-font);
     font-size: var(--button-font-size);

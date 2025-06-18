@@ -1,0 +1,13 @@
+{
+  "name": "Hintermann Box",
+  "short_name": "HintermannBox",
+  "start_url": ".",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "static/hintermann.png",
+      "sizes": "800x800",
+      "type": "image/png"
+    }
+  ]
+}
