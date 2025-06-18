@@ -28,5 +28,5 @@ jobs:
         host: ${{ secrets.CD_HOST }}
         username: ubuntu
         key: ${{ secrets.CD_SSH_KEY }}
-        source: "**/*"
+        source: "."
         target: "/var/www/box.hintermann.ro/"
