@@ -1,6 +1,6 @@
 // @ts-check
 
-import { updateLocationUI } from "../ui/updateLocationUI.js";
+import { updateLocationUI, updateProgressUI } from "../ui/ui.js";
 import { LocationEntity } from "./LocationEntity.js";
 import { centerMap } from "./MapController.js";
 
@@ -20,6 +20,10 @@ export class LocationManager {
         document.addEventListener('location:statusChanged', () => {
             this.updateUI();
         });
+    }
+
+    getActive() {
+        return this.locations[this.activeIndex];
     }
 
     /**
@@ -49,19 +53,38 @@ export class LocationManager {
             onNext: () => this.setActive(this.activeIndex + 1),
             onToggleCompleted: () => loc.toggleCompleted()
         });
+
+        const { completed, total } = this.getProgress();
+
+        updateProgressUI({
+            completed: completed,
+            total: total,
+            canReset: completed > 0,
+            onReset: () => this.resetProgress()
+        });
     }
 
-    getActive() {
-        return this.locations[this.activeIndex];
+    /**
+     * @returns {{ completed: number, total: number }}
+     */
+    getProgress() {
+        const total = this.locations.length;
+        const completed = this.locations.filter(loc => loc.completed).length;
+        return { completed, total };
     }
 
     resetProgress() {
         if (!confirm("Are you sure you want to reset all progress?")) return;
-
         for (const loc of this.locations) {
             loc.unsetCompleted();
         }
-
         this.setActive(0);
+    }
+
+    /**
+     * @returns {number | null}
+     */
+    getFirstIncompleteIndex() {
+        return this.locations.find(loc => !loc.completed)?.index ?? null;
     }
 }

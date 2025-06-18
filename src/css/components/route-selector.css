@@ -1,0 +1,31 @@
+.route-selector {
+    background-color: hsl(var(--color-bg-accent));
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    padding: var(--space-8) 0;
+}
+
+.route-selector__close {
+    padding: var(--space-1);
+    border-radius: var(--radius-full);
+    fill: hsl(var(--color-secondary));
+    transition: background-color var(--transition-fast);
+    cursor: pointer;
+}
+
+.route-selector__close:hover {
+    background-color: hsl(var(--color-secondary) / 0.1);
+}
+
+.route-selector__option {
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid hsl(var(--color-secondary) / 0.25);
+    font-size: var(--font-size-base);
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+}
+
+.route-selector__option:hover {
+    background-color: hsl(var(--color-secondary) / 0.05);
+}

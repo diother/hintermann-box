@@ -4,33 +4,50 @@ import { LocationEntity } from "../core/LocationEntity.js";
 import { safe } from "./helpers.js";
 
 /**
+ * @param {() => void} onChange
+ */
+export function initRouteChangeBtn(onChange) {
+    safe('[data-change-route]').onclick = onChange;
+}
+
+/**
  * @param {Route[]} routes
  * @param {(id: string) => void} onSelect
+ * @param {boolean} optional
  */
-export function showRoutePrompt(routes, onSelect) {
+export function showRoutePrompt(routes, onSelect, optional = true) {
+    const content = safe("[data-content]");
     const selector = safe("[data-route-selector]");
     const list = safe("[data-route-list]");
 
+    content.style.position = "fixed";
+    content.style.overflow = "hidden";
     selector.classList.remove("hidden");
     list.innerHTML = "";
 
-    routes.forEach(route => {
-        const li = document.createElement("li");
-        const btn = document.createElement("button");
-
-        btn.textContent = route.name;
-        btn.onclick = () => {
+    if (optional) {
+        const closeBtn = safe("[data-route-selector-close]");
+        closeBtn.classList.remove("hidden");
+        closeBtn.onclick = () => {
+            content.removeAttribute("style");
             selector.classList.add("hidden");
-            onSelect(route.id);
-        }
+            closeBtn.classList.add("hidden");
+        };
+    }
 
-        li.appendChild(btn);
-        list.appendChild(li);
+    routes.forEach(route => {
+        const btn = document.createElement("div");
+
+        btn.classList.add("route-selector__option");
+        btn.textContent = route.name;
+        btn.onclick = () => onSelect(route.id)
+
+        list.appendChild(btn);
     });
 }
 
 /**
- * @typedef {Object} UIParams
+ * @typedef {Object} LocationUIParams
  * @property {LocationEntity} location
  * @property {boolean} hasPrev
  * @property {boolean} hasNext
@@ -40,21 +57,20 @@ export function showRoutePrompt(routes, onSelect) {
  */
 
 /**
- * @param {UIParams} params
+ * @param {LocationUIParams} params
  */
 export function updateLocationUI(params) {
     const { location, hasPrev, hasNext, onPrev, onNext, onToggleCompleted } = params;
-    const { data, completed } = location;
+    const { data, completed, image, wazeLink } = location;
 
     safe('[data-location-title]').textContent = data.name;
     safe('[data-location-address]').textContent = data.address;
-    safe('[data-location-description]').textContent = data.description;
-    safe('[data-location-image]', HTMLImageElement).src = `/images/${data.image}`;
-    safe('[data-location-waze]', HTMLAnchorElement).href = data.wazeLink;
+    safe('[data-location-image]', HTMLImageElement).src = image;
+    safe('[data-location-waze]', HTMLAnchorElement).href = wazeLink;
 
     const toggleBtn = safe('[data-location-toggle]');
-    toggleBtn.textContent = completed ? 'Mark Incomplete' : 'Mark Complete';
-    toggleBtn.classList.toggle('completed', completed);
+    toggleBtn.textContent = completed ? 'Marchează necolectat' : 'Marchează colectat';
+    toggleBtn.classList.toggle('button--variant-hollow', completed);
     toggleBtn.onclick = onToggleCompleted;
 
     const prevBtn = safe('[data-location-prev]', HTMLButtonElement);
@@ -62,8 +78,33 @@ export function updateLocationUI(params) {
 
     prevBtn.disabled = !hasPrev;
     nextBtn.disabled = !hasNext;
+    prevBtn.classList.toggle('button--disabled', !hasPrev);
+    nextBtn.classList.toggle('button--disabled', !hasNext);
     prevBtn.onclick = onPrev;
     nextBtn.onclick = onNext;
 
     safe('[data-location-panel]').classList.remove('hidden');
+}
+
+/**
+ * @typedef {Object} ProgressUIParams
+ * @property {number} completed
+ * @property {number} total
+ * @property {boolean} canReset
+ * @property {() => void} onReset
+ */
+
+/**
+ * @param {ProgressUIParams} params
+ */
+export function updateProgressUI(params) {
+    const { completed, total, canReset, onReset } = params;
+
+    safe('[data-progress]').textContent = `${completed} / ${total}`;
+
+    const resetBtn = safe('[data-progress-reset]');
+    resetBtn.onclick = canReset ? onReset : () => { };
+    resetBtn.classList.toggle("progress-panel__reset--disabled", !canReset);
+
+    safe('[data-progress-panel]').classList.remove('hidden');
 }

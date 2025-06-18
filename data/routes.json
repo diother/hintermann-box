@@ -4,9 +4,18 @@
         "name": "Bucuresti Centru",
         "description": "Acopera partea de centru a Bucurestiului",
         "locationIds": [
-            "bucuresti-lipscani",
-            "bucuresti-pipera",
-            "bucuresti-universitate"
+            "bucuresti-catena-lipscani",
+            "bucuresti-dona-pipera",
+            "bucuresti-ana-maria-universitatii"
+        ]
+    },
+    {
+        "id": "bucuresti-sud",
+        "name": "Bucuresti Sud",
+        "description": "Acopera partea de sud a Bucurestiului",
+        "locationIds": [
+            "bucuresti-catena-lipscani",
+            "bucuresti-dona-pipera"
         ]
     }
 ]

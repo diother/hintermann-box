@@ -1,0 +1,35 @@
+.progress-panel {
+    background-color: hsl(var(--color-bg-accent));
+    height: var(--space-12);
+    padding: 0 var(--padding-sides);
+}
+
+.progress-panel__highlight {
+    font-family: var(--font-heading);
+}
+
+.progress-panel__change-route,
+.progress-panel__reset {
+    padding: var(--space-1);
+    border-radius: var(--radius-full);
+    fill: hsl(var(--color-secondary));
+    transition: background-color var(--transition-fast);
+    cursor: pointer;
+}
+
+.progress-panel__change-route:hover {
+    background-color: hsl(var(--color-secondary) / 0.1);
+}
+
+.progress-panel__reset:hover {
+    background-color: hsl(var(--color-secondary) / 0.1);
+}
+
+.progress-panel__reset--disabled {
+    fill: hsl(var(--color-muted) / 0.4);
+    cursor: default;
+}
+
+.progress-panel__reset--disabled:hover {
+    background-color: transparent;
+}

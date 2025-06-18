@@ -1,0 +1,26 @@
+.location {
+    padding: var(--space-6);
+}
+
+.location__image {
+    aspect-ratio: 16 / 9;
+}
+
+.location__chevron-left,
+.location__chevron-right {
+    position: absolute;
+}
+
+.location__chevron-left {
+    position: absolute;
+    left: var(--space-0-5);
+}
+
+.location__chevron-right {
+    position: absolute;
+    right: var(--space-0-5);
+}
+
+.location__image {
+    border-radius: var(--radius-md);
+}

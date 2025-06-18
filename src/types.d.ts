@@ -28,9 +28,6 @@ declare global {
     interface RawLocation {
         name: string;
         address: string;
-        description: string;
-        image: string;
-        wazeLink: string;
         coordinates: Coordinates;
     }
 

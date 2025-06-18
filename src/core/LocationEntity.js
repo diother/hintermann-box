@@ -13,11 +13,13 @@ export class LocationEntity {
         this.index = index;
         this.completed = isLocationCompleted(data.id);
         this.marker = null;
+        this.image = `/static/media/${data.id}.webp`;
+        this.wazeLink = `https://waze.com/ul?ll=${data.coordinates.lat},${data.coordinates.lng}&navigate=yes`;
     }
 
     initMarker() {
         this.marker = addLocationMarker(this.data.coordinates);
-        this.marker.onclick = () => this.select();
+        this.marker.on("click", () => this.select());
     }
 
     toggleCompleted() {

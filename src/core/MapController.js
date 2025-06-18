@@ -1,12 +1,11 @@
 let map = null;
 
-export function initMap(onInit) {
+export function initMap() {
     map = L.map("map");
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; OpenStreetMap',
     }).addTo(map);
-    onInit();
 }
 
 function getMap() {

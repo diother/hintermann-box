@@ -1,0 +1,56 @@
+.button {
+    --button-color-bg: var(--color-secondary);
+    --button-color-fg: var(--color-fg-inverse);
+    --button-color-border: var(--color-secondary);
+    --button-color-hover: var(--button-color-bg) / 0.9;
+    --button-font-size: var(--font-size-sm);
+    --button-font: var(--font-body);
+
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    height: 30px;
+    width: fit-content;
+    font-family: var(--button-font);
+    font-size: var(--button-font-size);
+    color: hsl(var(--button-color-fg));
+    fill: hsl(var(--button-color-fg));
+    background-color: hsl(var(--button-color-bg));
+    border: 1px solid hsl(var(--button-color-border));
+    border-radius: var(--radius-full);
+    text-align: center;
+    cursor: pointer;
+    transition:
+        background-color var(--transition-fast),
+        color var(--transition-fast);
+}
+
+.button:hover {
+    background-color: hsl(var(--button-color-hover));
+}
+
+.button--font-heading {
+    --button-font: var(--font-heading);
+}
+
+.button--variant-hollow {
+    --button-color-bg: var(--color-bg);
+    --button-color-fg: var(--color-secondary);
+    --button-color-border: var(--color-secondary);
+}
+
+.button--variant-hollow:hover {
+    --button-color-hover: var(--color-secondary) / 0.2;
+}
+
+.button--disabled {
+    --button-color-bg: var(--color-bg);
+    --button-color-fg: var(--color-muted) / 0.4;
+    --button-color-border: var(--color-muted) / 0.4;
+}
+
+.button--disabled:hover {
+    --button-color-hover: hsl(var(--color-bg));
+}

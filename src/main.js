@@ -3,28 +3,20 @@
 import { LocationEntity } from "./core/LocationEntity.js";
 import { LocationManager } from "./core/LocationManager.js";
 import { initMap } from "./core/MapController.js";
-import { showRoutePrompt } from "./ui/ui.js";
+import { initRouteChangeBtn, showRoutePrompt } from "./ui/ui.js";
 import { loadLocations, loadRoutes } from "./utils/dataLoader.js";
 import { getSavedRouteId, saveRouteId } from "./utils/storage.js";
 
 async function main() {
     try {
+        /** @type {Route[]} */
         const routes = await loadRoutes();
         const savedId = getSavedRouteId();
 
         if (savedId) {
             await initApp(savedId, routes);
         } else {
-            showRoutePrompt(routes,
-                /** 
-                 * Callback when a route is selected 
-                 * @param {string} chosenId
-                 */
-                async (chosenId) => {
-                    saveRouteId(chosenId);
-                    await initApp(chosenId, routes);
-                }
-            );
+            showRoutePrompt(routes, handleRouteSelect, false);
         }
     } catch (err) {
         console.error('Fatal error', err);
@@ -36,10 +28,13 @@ async function main() {
  * @param {Route[]} routes
  */
 async function initApp(routeId, routes) {
-    const allLocations = await loadLocations();
+    initRouteChangeBtn(() => showRoutePrompt(routes, handleRouteSelect));
 
     const route = routes.find(r => r.id === routeId);
     if (!route) throw new Error(`Missing route: ${routeId}`);
+
+    /** @type {Object.<string, RawLocation>} */
+    const allLocations = await loadLocations();
 
     /** @type {LocationEntity[]} */
     const entities = route.locationIds.map((id, i) => {
@@ -48,12 +43,25 @@ async function initApp(routeId, routes) {
         return new LocationEntity({ id, ...raw }, i);
     });
 
+    initMap();
+    entities.forEach(loc => loc.initMarker());
+
     const manager = new LocationManager(entities);
 
-    initMap(() => manager.setActive(0));
+    /** @type {number} */
+    const firstActive =
+        manager.getFirstIncompleteIndex() ??
+        manager.locations.length - 1;
 
-    entities.forEach(loc => loc.initMarker());
+    manager.setActive(firstActive);
 }
 
 main();
 
+/** 
+ * @param {string} chosenId 
+ */
+function handleRouteSelect(chosenId) {
+    saveRouteId(chosenId);
+    location.reload();
+}
