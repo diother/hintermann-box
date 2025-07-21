@@ -16,12 +16,9 @@ export function initRouteChangeBtn(onChange) {
  * @param {boolean} optional
  */
 export function showRoutePrompt(routes, onSelect, optional = true) {
-    const content = safe("[data-content]");
     const selector = safe("[data-route-selector]");
     const list = safe("[data-route-list]");
 
-    content.style.position = "fixed";
-    content.style.overflow = "hidden";
     selector.classList.remove("hidden");
     list.innerHTML = "";
 
@@ -29,7 +26,6 @@ export function showRoutePrompt(routes, onSelect, optional = true) {
         const closeBtn = safe("[data-route-selector-close]");
         closeBtn.classList.remove("hidden");
         closeBtn.onclick = () => {
-            content.removeAttribute("style");
             selector.classList.add("hidden");
             closeBtn.classList.add("hidden");
         };
