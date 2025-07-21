@@ -4,9 +4,11 @@
     left: 0;
     right: 0;
     z-index: 6000;
+    pointer-events: none;
 }
 
 .location-panel {
+    pointer-events: auto;
     position: relative;
     background-color: hsl(var(--color-bg));
     padding: var(--space-6) var(--padding-sides) var(--space-4);
@@ -45,6 +47,7 @@
 }
 
 .location-nav {
+    pointer-events: auto;
     background-color: hsl(var(--color-bg-accent));
     padding: var(--space-2) var(--padding-sides);
     z-index: 6001;
