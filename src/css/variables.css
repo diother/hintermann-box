@@ -4,6 +4,7 @@
     --font-heading: "Raleway", Arial, system-ui, sans-serif;
 
     /* Font sizes */
+    --font-size-xs: 0.75rem;
     --font-size-sm: 0.875rem;
     --font-size-base: 1rem;
     --font-size-lg: 1.125rem;
@@ -27,6 +28,7 @@
     --color-fg-inverse: 0 0% 100%;
     --color-primary: 328 80% 47%;
     --color-secondary: 220 31% 33%;
+    --color-ternary: 206 70% 83%;
     --color-muted: 0 0% 25%;
     --color-border: 220 13% 91%;
 
@@ -72,4 +74,7 @@
 
     /* Padding */
     --padding-sides: var(--space-6);
+
+    /* Shadows */
+    --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

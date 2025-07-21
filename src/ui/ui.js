@@ -69,8 +69,7 @@ export function updateLocationUI(params) {
     safe('[data-location-waze]', HTMLAnchorElement).href = wazeLink;
 
     const toggleBtn = safe('[data-location-toggle]');
-    toggleBtn.textContent = completed ? 'Marchează necolectat' : 'Marchează colectat';
-    toggleBtn.classList.toggle('button--variant-hollow', completed);
+    toggleBtn.classList.toggle('location-nav__button--active', completed);
     toggleBtn.onclick = onToggleCompleted;
 
     const prevBtn = safe('[data-location-prev]', HTMLButtonElement);
@@ -78,12 +77,10 @@ export function updateLocationUI(params) {
 
     prevBtn.disabled = !hasPrev;
     nextBtn.disabled = !hasNext;
-    prevBtn.classList.toggle('button--disabled', !hasPrev);
-    nextBtn.classList.toggle('button--disabled', !hasNext);
+    prevBtn.classList.toggle('location-nav__button--disabled', !hasPrev);
+    nextBtn.classList.toggle('location-nav__button--disabled', !hasNext);
     prevBtn.onclick = onPrev;
     nextBtn.onclick = onNext;
-
-    safe('[data-location-panel]').classList.remove('hidden');
 }
 
 /**
@@ -105,6 +102,4 @@ export function updateProgressUI(params) {
     const resetBtn = safe('[data-progress-reset]');
     resetBtn.onclick = canReset ? onReset : () => { };
     resetBtn.classList.toggle("progress-panel__reset--disabled", !canReset);
-
-    safe('[data-progress-panel]').classList.remove('hidden');
 }

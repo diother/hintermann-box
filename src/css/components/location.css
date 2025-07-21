@@ -1,0 +1,74 @@
+.location {
+    position: absolute;
+    bottom: 0;
+    z-index: 6000;
+}
+
+/* transition: transform 0.3s ease; */
+/* touch-action: none; */
+
+/* .location--minimized { */
+/*     transform: translateY(80%); */
+/* } */
+/**/
+
+.location__image {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
+}
+
+.location__image {
+    border-radius: var(--radius-md);
+}
+
+.location-nav {
+    background-color: hsl(var(--color-bg-accent));
+    padding: var(--space-2) var(--padding-sides);
+}
+
+.location-nav__button {
+    --button-color-fg: var(--color-secondary);
+
+    background-color: transparent;
+    color: hsl(var(--button-color-fg));
+    fill: hsl(var(--button-color-fg));
+    border: none;
+    font-family: var(--font-body);
+    font-size: var(--font-size-xs);
+    line-height: 1;
+    height: var(--space-10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-1);
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.location-nav__button-svg-container {
+    width: var(--space-12);
+    border-radius: var(--radius-full);
+    display: flex;
+    justify-content: center;
+    transition:
+        background-color var(--transition-fast),
+        color var(--transition-fast);
+}
+
+.location-nav__button--disabled {
+    --button-color-fg: var(--color-muted) / 0.4;
+    cursor: default;
+}
+
+.location-nav__button:not(.location-nav__button--disabled):hover,
+.location-nav__button--active {
+    font-weight: 700;
+}
+
+.location-nav__button:not(.location-nav__button--disabled):hover .location-nav__button-svg-container,
+.location-nav__button--active .location-nav__button-svg-container {
+    background-color: hsl(var(--color-ternary));
+}

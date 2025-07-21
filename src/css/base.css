@@ -31,17 +31,11 @@ body {
     background-color: hsl(var(--color-bg));
     color: hsl(var(--color-secondary));
     line-height: 1.6;
+    overflow: hidden;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.content__main {
-    width: 100%;
-    flex: 1;
+#map {
+    height: 100vh;
 }
 
 h1,

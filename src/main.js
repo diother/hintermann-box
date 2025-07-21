@@ -3,6 +3,7 @@
 import { LocationEntity } from "./core/LocationEntity.js";
 import { LocationManager } from "./core/LocationManager.js";
 import { initMap } from "./core/MapController.js";
+import { initLocationPanelBehavior } from "./ui/uiBehavior.js";
 import { initRouteChangeBtn, showRoutePrompt } from "./ui/ui.js";
 import { loadLocations, loadRoutes } from "./utils/dataLoader.js";
 import { getSavedRouteId, saveRouteId } from "./utils/storage.js";
@@ -56,8 +57,6 @@ async function initApp(routeId, routes) {
     manager.setActive(firstActive);
 }
 
-main();
-
 /** 
  * @param {string} chosenId 
  */
@@ -65,3 +64,6 @@ function handleRouteSelect(chosenId) {
     saveRouteId(chosenId);
     location.reload();
 }
+
+// initLocationPanelBehavior();
+main();
