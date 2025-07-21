@@ -14,6 +14,10 @@
     --padding-x: var(--space-0);
 }
 
+.container--w-auto {
+    width: auto;
+}
+
 .w-full {
     width: 100%;
 }

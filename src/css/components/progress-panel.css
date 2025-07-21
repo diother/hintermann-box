@@ -1,12 +1,10 @@
 .progress-panel {
     background-color: hsl(var(--color-bg-accent));
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: absolute;
+    inset: var(--space-2);
+    bottom: auto;
     height: var(--space-12);
     padding: 0 var(--padding-sides);
-    margin: var(--space-2) var(--space-2) 0;
     border-radius: var(--radius-full);
     box-shadow: var(--shadow);
     z-index: 6000;
