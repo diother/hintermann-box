@@ -65,5 +65,5 @@ function handleRouteSelect(chosenId) {
     location.reload();
 }
 
-// initLocationPanelBehavior();
+initLocationPanelBehavior();
 main();

@@ -12,10 +12,6 @@
     z-index: 6000;
 }
 
-.progress-panel__highlight {
-    font-family: var(--font-heading);
-}
-
 .progress-panel__change-route,
 .progress-panel__reset {
     padding: var(--space-1);

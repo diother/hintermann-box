@@ -74,7 +74,7 @@ export class LocationManager {
     }
 
     resetProgress() {
-        if (!confirm("Ești sigur că vrei să resetezi tot progresul pe această rută?")) return;
+        if (!confirm("Vrei să resetezi progresul pe această rută?")) return;
         for (const loc of this.locations) {
             loc.unsetCompleted();
         }
