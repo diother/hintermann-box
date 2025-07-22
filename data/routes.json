@@ -1,21 +1,79 @@
 [
-    {
-        "id": "bucuresti-centru",
-        "name": "Bucuresti Centru",
-        "description": "Acopera partea de centru a Bucurestiului",
-        "locationIds": [
-            "bucuresti-catena-lipscani",
-            "bucuresti-dona-pipera",
-            "bucuresti-ana-maria-universitatii"
-        ]
-    },
-    {
-        "id": "bucuresti-sud",
-        "name": "Bucuresti Sud",
-        "description": "Acopera partea de sud a Bucurestiului",
-        "locationIds": [
-            "bucuresti-catena-lipscani",
-            "bucuresti-dona-pipera"
-        ]
-    }
+  {
+    "id": "ilfov-nord",
+    "name": "Ilfov Nord",
+    "description": "Approx northern cluster",
+    "locationIds": [
+      "ana-maria-giurgiului",
+      "ana-maria-voinesti",
+      "ana-maria-targoviste",
+      "ana-maria-filipestii-de-padure",
+      "ana-maria-blejoi",
+      "ana-maria-peris",
+      "ana-maria-tancabesti",
+      "ana-maria-corbeanca",
+      "ana-maria-mogosoaia",
+      "ana-maria-domenii",
+      "ana-maria-turda",
+      "ana-maria-piata-victoriei",
+      "ana-maria-washington",
+      "ana-maria-crangasi",
+      "ana-maria-gorjului",
+      "ana-maria-apusului",
+      "ana-maria-iuliu-maniu",
+      "ana-maria-drumul-taberelor",
+      "ana-maria-moghioros",
+      "ana-maria-pallady",
+      "ana-maria-rahova-2-economat",
+      "ana-maria-petre-ispirescu",
+      "ana-maria-rahova",
+      "ana-maria-teiusi",
+      "ana-maria-progresul",
+      "ana-maria-clinceni",
+      "ana-maria-bolintin-deal",
+      "ana-maria-floresti",
+      "ana-maria-lunguletu",
+      "ana-maria-crevedia",
+      "ana-maria-branistea"
+    ]
+  },
+  {
+    "id": "ilfov-sud",
+    "name": "Ilfov Sud",
+    "description": "Approx southern cluster",
+    "locationIds": [
+      "ana-maria-vadul-nou",
+      "ana-maria-sincai",
+      "ana-maria-sebastian",
+      "ana-maria-vitan",
+      "ana-maria-dacia",
+      "ana-maria-obor",
+      "ana-maria-colentina",
+      "ana-maria-ziduri-mosi",
+      "ana-maria-pantelimon",
+      "ana-maria-pantelimon-2",
+      "ana-maria-pantelimon-3",
+      "ana-maria-salajan",
+      "ana-maria-salajan-2",
+      "ana-maria-dristor",
+      "ana-maria-1-decembrie",
+      "ana-maria-piata-straduintei",
+      "ana-maria-aparatorii-patriei",
+      "ana-maria-piata-sudului",
+      "ana-maria-popesti-leordeni",
+      "ana-maria-popesti-leordeni-3",
+      "ana-maria-popesti-leordeni-2",
+      "ana-maria-iancului",
+      "ana-maria-pantelimon-4",
+      "ana-maria-andronache",
+      "ana-maria-stefanesti",
+      "ana-maria-afumati",
+      "ana-maria-branesti",
+      "ana-maria-branesti-2",
+      "ana-maria-balotesti",
+      "ana-maria-ghermanesti",
+      "ana-maria-vidra"
+    ]
+  }
 ]
+

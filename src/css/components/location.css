@@ -88,12 +88,10 @@
     cursor: default;
 }
 
-.location-nav__button:not(.location-nav__button--disabled):hover,
 .location-nav__button--active {
     font-weight: 700;
 }
 
-.location-nav__button:not(.location-nav__button--disabled):hover .location-nav__button-svg-container,
 .location-nav__button--active .location-nav__button-svg-container {
     background-color: hsl(var(--color-ternary));
 }
