@@ -1,29 +1,37 @@
 id;name;address;lat;lng
+ana-maria-obor;Farmacia Ana Maria Obor;Șoseaua Colentina 2, București;44.449680208702034;26.12661426687726
+ana-maria-dacia;Farmacia Ana Maria Dacia;Bulevardul Dacia nr. 150, București;44.44369681041501;26.118409838307322
+ana-maria-colentina;Farmacia Ana Maria Colentina;Șoseaua Colentina 3A, București;44.452163551754566;26.125872071164697
+ana-maria-ziduri-mosi;Farmacia Ana Maria Ziduri Moși;Strada Ziduri Moși 3A, București;44.45339352033721;26.12816158465879
+ana-maria-iancului;Farmacia Ana Maria Iancului;Șoseaua Mihai Bravu nr. 126, București;44.440596107515084;26.13370082849812
+ana-maria-vitan;Farmacia Ana Maria Vitan;Calea Vitan 13-19, București;44.42317068928541;26.12422923936229
+ana-maria-aparatorii-patriei;Farmacia Ana Maria Apărătorii Patriei;Șoseaua Berceni, nr.183, București;44.37947648888968;26.135686858895593
+ana-maria-popesti-leordeni;Farmacia Ana Maria Popești Leordeni;Oraș Popești-Leordeni, Strada Oituz 18, Ilfov;44.37044322739832;26.14595730972633
+ana-maria-popesti-leordeni-2;Farmacia Ana Maria Popești Leordeni 2;Oraș Popești-Leordeni, Strada Leordeni, nr.1, Spațiul Comercial 1, Ilfov;44.38019505059316;26.168792071743752
+ana-maria-popesti-leordeni-3;Farmacia Ana Maria Popești Leordeni 3;Oraș Popești-Leordeni, Drumul Fermei nr.99, Ilfov;44.366685979535205;26.15296059571261
+ana-maria-piata-straduintei;Farmacia Ana Maria Piața Străduinței;Bulevardul Alexandru Obregia, nr. 25B, București;44.383629063845554;26.115542849678462
+ana-maria-piata-sudului;Farmacia Ana Maria Piața Sudului;Șoseaua Oltenitei, nr.208, incinta Mega Image, București;44.39365539494801;26.119959528862417
+ana-maria-sincai;Farmacia Ana Maria Șincai;Bulevardul Gheorghe Șincai, nr. 1, București;44.41459204073911;26.10498416624595
+ana-maria-giurgiului;Farmacia Ana Maria Giurgiului;Șoseaua Giurgiului nr. 123, București;44.385338293266734;26.093056860481695
+ana-maria-vidra;Farmacia Ana Maria Vidra;Comuna Vidra, Strada Principală nr. 89, Ilfov;44.26500586953086;26.152213110455634
+ana-maria-clinceni;Farmacia Ana Maria Clinceni;Sat Clinceni, Strada Principală, nr. 105, Ilfov;44.377569643762;25.943867637850534
+la-cocos-vitantis;La Cocoș Vitantis;Șoseaua Vitan-Bârzești 7A, București;44.39962787291106;26.146782251037248
+la-cocos-ploiesti-1;La Cocoș Ploiești 1;Șoseaua Vestului 21, Ploiești;44.942083463136136;25.991346706396047
+la-cocos-ploiesti-2;La Cocoș Ploiești 2;Strada Poligonului 5-7, Ploiești;44.947258698784985;25.988555131042588
 ana-maria-piata-victoriei;Farmacia Ana Maria Piața Victoriei;Piața Victoriei, bloc A6, parter, București;44.4517543;26.0840209
 ana-maria-washington;Farmacia Ana Maria Washington;Strada Washington nr. 2, București;44.455179;26.0897395
 ana-maria-domenii;Farmacia Ana Maria Domenii;Bulevardul Ion Mihalache nr. 128C, București;44.4655793;26.0672104
 ana-maria-turda;Farmacia Ana Maria Turda;Bulevardul Ion Mihalache nr. 115, Bl. 10A2, București;44.4619462;26.0718021
-ana-maria-dacia;Farmacia Ana Maria Dacia;Bulevardul Dacia nr. 150, București;44.4436457;26.1183634
-ana-maria-obor;Farmacia Ana Maria Obor;Șoseaua Colentina 2, București;44.4496669;26.1266193
-ana-maria-ziduri-mosi;Farmacia Ana Maria Ziduri Moși;Strada Ziduri Moși 3A, București;44.4531944;26.1282045
-ana-maria-colentina;Farmacia Ana Maria Colentina;Șoseaua Colentina 3A, București;44.4521176;26.1258828
 ana-maria-andronache;Farmacia Ana Maria Andronache;Șoseaua Andronache nr.7, București;44.4698832;26.1445094
 ana-maria-pantelimon;Farmacia Ana Maria Pantelimon;Șoseaua Pantelimon nr. 243, București;44.4432423;26.1466105
 ana-maria-pantelimon-2;Farmacia Ana Maria Pantelimon 2;Șoseaua Pantelimon nr. 248-250, București;44.442581;26.1541072
 ana-maria-pantelimon-3;Farmacia Ana Maria Pantelimon 3;Șoseaua Pantelimon nr. 358, București;44.4419802;26.1630552
-ana-maria-iancului;Farmacia Ana Maria Iancului;Șoseaua Mihai Bravu nr. 126, București;44.3850593;26.1625498
 ana-maria-1-decembrie;Farmacia Ana Maria 1 Decembrie;Bulevardul 1 Decembrie 1918 nr.37, București;44.412669;26.122082
 ana-maria-salajan;Farmacia Ana Maria Sălăjan;Bulevardul Nicolae Grigorescu nr. 51A, București;44.4142004;26.1630303
 ana-maria-salajan-2;Farmacia Ana Maria Sălăjan 2;Bulevardul Nicolae Grigorescu nr. 53, București;44.4133982;26.1637221
 ana-maria-dristor;Farmacia Ana Maria Dristor;Bulevardul Camil Ressu nr. 4, bl. 5, complex A26, București;44.4191485;26.1392887
 ana-maria-pallady;Farmacia Ana Maria Pallady;Bulevardul Theodor Pallady nr.27, București;44.417652;26.0577571
-ana-maria-vitan;Farmacia Ana Maria Vitan;Calea Vitan 13-19, București;44.429167;26.101557
 ana-maria-progresul;Farmacia Ana Maria Progresul;Șoseaua Giurgiului nr. 109A, București;44.3925528;26.0941674
-ana-maria-sincai;Farmacia Ana Maria Șincai;Bulevardul Gheorghe Șincai, nr. 1, București;44.414567;26.1048673
-ana-maria-aparatorii-patriei;Farmacia Ana Maria Apărătorii Patriei;Șoseaua Berceni, nr.183, București;44.3794693;26.1356882
-ana-maria-piata-sudului;Farmacia Ana Maria Piața Sudului;Șoseaua Oltenitei, nr.208, incinta Mega Image, București;44.3780975;26.1356662
-ana-maria-piata-straduintei;Farmacia Ana Maria Piața Străduinței;Bulevardul Alexandru Obregia, nr. 25B, București;44.3836302;26.1155402
-ana-maria-giurgiului;Farmacia Ana Maria Giurgiului;Șoseaua Giurgiului nr. 123, București;44.385493;26.0930614
 ana-maria-rahova;Farmacia Ana Maria Rahova;Șoseaua Alexandriei nr. 8, București;44.407451;26.090529
 ana-maria-rahova-2-economat;Farmacia Ana Maria Rahova 2 Economat;Șoseaua Alexandriei nr. 3-5, București;44.4044751;26.0626326
 ana-maria-petre-ispirescu;Farmacia Ana Maria Petre Ispirescu;Calea Rahovei 330 - 334, București;44.411086;26.080148
@@ -36,22 +44,17 @@ ana-maria-crangasi;Farmacia Ana Maria Crângași;Calea Crângași, nr.29, Bucure
 ana-maria-gorjului;Farmacia Ana Maria Gorjului;Bulevardul Iuliu Maniu, nr. 152, bl. K1, București;44.4346043;26.0171556
 ana-maria-iuliu-maniu;Farmacia Ana Maria Iuliu Maniu;Bulevardul Iuliu Maniu, nr. 184 A, București;44.4341222;26.0072083
 ana-maria-drumul-taberelor;Farmacia Ana Maria Drumul Taberelor;Strada Brasov, nr.25, Centrul Comercial Drumul Taberelor, București;44.4273135;26.0146691
-ana-maria-popesti-leordeni;Farmacia Ana Maria Popești Leordeni;Oraș Popești-Leordeni, Strada Oituz 18, Ilfov;44.3704092;26.1364836
-ana-maria-popesti-leordeni-2;Farmacia Ana Maria Popești Leordeni 2;Oraș Popești-Leordeni, Strada Leordeni, nr.1, Spațiul Comercial 1, Ilfov;44.3802293;26.1592044
 ana-maria-afumati;Farmacia Ana Maria Afumați;Comuna Afumați, Sos. București-Urziceni, nr. 138, Ilfov;44.5241196;26.250544
 ana-maria-branesti;Farmacia Ana Maria Brănești;Comuna Brănești, Bulevardul Ion C. Brătianu nr. 17, Ilfov;44.4621496;26.3272342
 ana-maria-branesti-2;Farmacia Ana Maria Brănești 2;Strada Sublocotenent Petre Ionel nr. 6A, Ilfov;44.4621496;26.3272342
 ana-maria-balotesti;Farmacia Ana Maria Balotești;Sat Balotești, Șoseaua Unirii nr. 191, Ilfov;44.6222678;26.1071526
-ana-maria-clinceni;Farmacia Ana Maria Clinceni;Sat Clinceni, Strada Principală, nr. 105, Ilfov;44.377564;25.9438527
 ana-maria-mogosoaia;Farmacia Ana Maria Mogoșoaia;Sat Mogoșoaia, București-Târgoviște nr. 123, Ilfov;44.5298094;25.9988803
-ana-maria-vidra;Farmacia Ana Maria Vidra;Comuna Vidra, Strada Principală nr. 89, Ilfov;44.2650074;26.1522187
 ana-maria-ghermanesti;Farmacia Ana Maria Ghermănești;Sat Ghermănești, șoseaua Ghermănești nr. 86, Ilfov;44.6883448;26.1466349
 ana-maria-peris;Farmacia Ana Maria Periș;Comuna Periș, Strada Principală nr. 510, Ilfov;44.6778281;25.9978772
 ana-maria-pantelimon-4;Farmacia Ana Maria Pantelimon 4;Oraș Pantelimon, Strada Tudor Vladimirescu, nr. 21, Ilfov;44.4497913;26.2054063
 ana-maria-tancabesti;Farmacia Ana Maria Tancabesti;Șoseaua Bucuresti – Ploiesti nr. 153, Sat Tancabesti, Comuna Snagov, Ilfov;44.6786777;26.0748606
 ana-maria-corbeanca;Farmacia Ana Maria Corbeanca;Șoseaua Unirii, nr. 67A, Sat Petrești, Comuna Corbeanca, Ilfov;44.5988777;26.0585054
 ana-maria-stefanesti;Farmacia Ana Maria Ștefănești;Șoseaua Ștefănești nr. 71, Comuna Ștefăneștii de Jos, Ilfov;44.529243;26.1995353
-ana-maria-popesti-leordeni-3;Farmacia Ana Maria Popești Leordeni 3;Oraș Popești-Leordeni, Drumul Fermei nr.99, Ilfov;44.3684749;26.1504292
 ana-maria-crevedia;Farmacia Ana Maria Crevedia;Sat Crevedia, Șoseaua București-Târgoviște nr. 119, Dâmbovița;44.6379158;25.6646129
 ana-maria-branistea;Farmacia Ana Maria Braniștea;Strada Principală nr. 1385, Dâmbovița;44.6826296;25.5728181
 ana-maria-targoviste;Farmacia Ana Maria Târgoviște;Bulevardul Independenței, nr. 16, bloc 8, parter, Târgoviște, Dâmbovița;44.922264;25.4637542
