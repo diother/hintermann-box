@@ -1,5 +1,23 @@
 [
   {
+    "id": "test",
+    "name": "Test",
+    "description": "Custom, one-time route",
+    "locationIds": [
+      "ana-maria-salajan-2",
+      "ana-maria-salajan",
+      "ana-maria-1-decembrie",
+      "ana-maria-pantelimon-3",
+      "ana-maria-pantelimon-2",
+      "ana-maria-pantelimon",
+      "ana-maria-andronache",
+      "ana-maria-turda",
+      "ana-maria-domenii",
+      "ana-maria-washington",
+      "ana-maria-piata-victoriei",
+      "la-cocos-brasov"
+    ]
+  }, {
     "id": "ilfov-improv",
     "name": "Ilfov Improv",
     "description": "Custom, one-time route",

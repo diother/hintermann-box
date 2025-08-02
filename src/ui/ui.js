@@ -93,7 +93,7 @@ export function updateLocationUI(params) {
 export function updateProgressUI(params) {
     const { completed, total, canReset, onReset } = params;
 
-    safe('[data-progress]').textContent = `${completed} / ${total}`;
+    safe('[data-progress]').textContent = `${total - completed} / ${total}`;
 
     const resetBtn = safe('[data-progress-reset]');
     resetBtn.onclick = canReset ? onReset : () => { };
