@@ -49,7 +49,7 @@
 .location-nav {
     pointer-events: auto;
     background-color: hsl(var(--color-bg-accent));
-    padding: var(--space-2) var(--padding-sides) var(--space-6);
+    padding: var(--space-2) var(--padding-sides) max(env(safe-area-inset-bottom), var(--space-2));
     z-index: 6001;
 }
 

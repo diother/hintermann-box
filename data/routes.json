@@ -2,7 +2,6 @@
   {
     "id": "test",
     "name": "Test",
-    "description": "Custom, one-time route",
     "locationIds": [
       "ana-maria-crevedia",
       "ana-maria-branistea",
@@ -17,7 +16,6 @@
   }, {
     "id": "ilfov-improv",
     "name": "Ilfov Improv",
-    "description": "Custom, one-time route",
     "locationIds": [
       "la-cocos-ploiesti-2",
       "la-cocos-ploiesti-1",
@@ -42,7 +40,6 @@
   }, {
     "id": "all",
     "name": "All",
-    "description": "All",
     "locationIds": [
       "ana-maria-obor",
       "ana-maria-dacia",
@@ -110,6 +107,12 @@
       "la-cocos-ploiesti-1",
       "la-cocos-ploiesti-2",
       "la-cocos-brasov"
+    ]
+  }, {
+    "id": "brasov",
+    "name": "Brasov",
+    "locationIds": [
+      "easy-bartolomeu"
     ]
   }
 ]
