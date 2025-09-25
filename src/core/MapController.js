@@ -1,5 +1,18 @@
 let map = null;
 
+export function drawRouteLine(entities) {
+    const latlngs = entities.map(loc => [loc.data.coordinates.lat, loc.data.coordinates.lng]);
+    const polyline = L.polyline(latlngs, {
+        color: 'blue',
+        weight: 3,
+        opacity: 0.5,
+        dashArray: '5, 10'
+    }).addTo(map);
+
+    // optional: zoom map to fit route
+    map.fitBounds(polyline.getBounds());
+}
+
 export function initMap() {
     map = L.map('map', {
         zoomControl: false,

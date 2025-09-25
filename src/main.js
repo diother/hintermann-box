@@ -2,7 +2,7 @@
 
 import { LocationEntity } from "./core/LocationEntity.js";
 import { LocationManager } from "./core/LocationManager.js";
-import { initMap } from "./core/MapController.js";
+import { drawRouteLine, initMap } from "./core/MapController.js";
 import { initLocationPanelBehavior } from "./ui/uiBehavior.js";
 import { initRouteChangeBtn, showRoutePrompt } from "./ui/ui.js";
 import { loadLocations, loadRoutes } from "./utils/dataLoader.js";
@@ -46,6 +46,7 @@ async function initApp(routeId, routes) {
 
     initMap();
     entities.forEach(loc => loc.initMarker());
+    drawRouteLine(entities)
 
     const manager = new LocationManager(entities);
 
@@ -64,6 +65,7 @@ function handleRouteSelect(chosenId) {
     saveRouteId(chosenId);
     location.reload();
 }
+
 
 initLocationPanelBehavior();
 main();
