@@ -36,6 +36,9 @@ ana-maria-crangasi;Farmacia Ana Maria Crângași;Calea Crângași, nr.29, Bucure
 ana-maria-gorjului;Farmacia Ana Maria Gorjului;Bulevardul Iuliu Maniu, nr. 152, bl. K1, București;44.434259557356334;26.018357229621085
 ana-maria-iuliu-maniu;Farmacia Ana Maria Iuliu Maniu;Bulevardul Iuliu Maniu, nr. 184 A, București;44.43411770829403;26.01197634156433
 ana-maria-drumul-taberelor;Farmacia Ana Maria Drumul Taberelor;Strada Brasov, nr.25, Centrul Comercial Drumul Taberelor, București;44.416984035451065;26.0362467406446
+ana-maria-industriilor;Farmacia Ana Maria Industriilor;Strada Soldat Grigore Iancu 2, București;44.429892042307166;26.201578958895592
+ana-maria-raul-colentina;Farmacia Ana Maria Raul Colentina; Șoseaua Colentina 81, București;44.46668805896783;26.138026252408014
+ana-maria-izvorul-rece;Farmacia Ana Maria Izvorul Rece; Bulevardul Brâncoveanu nr. 114, București;44.386688185703804;26.109708679269556 
 
 ana-maria-clinceni;Farmacia Ana Maria Clinceni;Sat Clinceni, Strada Principală, nr. 105, Ilfov;44.377569643762;25.943867637850534
 ana-maria-vidra;Farmacia Ana Maria Vidra;Comuna Vidra, Strada Principală nr. 89, Ilfov;44.26500586953086;26.152213110455634
@@ -53,12 +56,15 @@ ana-maria-pantelimon-4;Farmacia Ana Maria Pantelimon 4;Oraș Pantelimon, Strada 
 ana-maria-tancabesti;Farmacia Ana Maria Tancabesti;Șoseaua Bucuresti – Ploiesti nr. 153, Sat Tancabesti, Comuna Snagov, Ilfov;44.67867526418824;26.074863465574847
 ana-maria-corbeanca;Farmacia Ana Maria Corbeanca;Șoseaua Unirii, nr. 67A, Sat Petrești, Comuna Corbeanca, Ilfov;44.598838221777925;26.061182568952994
 ana-maria-stefanesti;Farmacia Ana Maria Ștefănești;Șoseaua Ștefănești nr. 71, Comuna Ștefăneștii de Jos, Ilfov;44.529126189910976;26.199658233181168
+ana-maria-berceni;Farmacia Ana Maria Berceni;Bulevardul 1 Mai 63A, Comuna Berceni, Ilfov;44.32395121611214;26.177845923793168
 
 ana-maria-crevedia;Farmacia Ana Maria Crevedia;Sat Crevedia, Șoseaua București-Târgoviște nr. 119, Dâmbovița;44.593012196996355;25.921202820299204
 ana-maria-branistea;Farmacia Ana Maria Braniștea;Strada Principală nr. 1385, Dâmbovița;44.68262578582661;25.572828828836297
 ana-maria-targoviste;Farmacia Ana Maria Târgoviște;Bulevardul Independenței, nr. 16, bloc 8, parter, Târgoviște, Dâmbovița;44.92256703051529;25.466149923569503
 ana-maria-lunguletu;Farmacia Ana Maria Lungulețu;Strada Principală nr. 76A Sat Lungulețu, Comuna Lungulețu, Dâmbovița;44.60386868108345;25.666489899150374
 ana-maria-voinesti;Farmacia Ana Maria Voinești;Strada Principală nr. 128, corp C2, Satul Voinești, Comuna Voinești, Dâmbovița;45.0663966027707;25.252672973273768
+ana-maria-dragomiresti;Farmacia Ana Maria Dragomirești; Strada Principală nr. 119, Loc. Dragomirești, Comuna Dragomirești, Dâmbovița;44.88525779679085;25.394856291707075
+ana-maria-baleni;Farmacia Ana Maria Băleni; Comuna Băleni, Sat Băleni-Români, Șoseaua București-Târgoviște, nr. 229, Dâmbovița;44.81927228208831;25.65214032166168
 
 ana-maria-blejoi;Farmacia Ana Maria Blejoi;Comuna Blejoi, T23, Cc170/2, Prahova;44.986293113521484;26.014161657015364
 ana-maria-filipestii-de-padure;Farmacia Ana Maria Filipeștii de Pădure;Filipeștii de Pădure, Sat Filipeștii de Pădure, Strada Principală nr. 630, Prahova;44.996207887815245;25.74036264681181
@@ -70,6 +76,14 @@ la-cocos-vitantis;La Cocoș Vitantis;Șoseaua Vitan-Bârzești 7A, București;44
 la-cocos-ploiesti-1;La Cocoș Ploiești 1;Șoseaua Vestului 21, Ploiești;44.942083463136136;25.991346706396047
 la-cocos-ploiesti-2;La Cocoș Ploiești 2;Strada Poligonului 5-7, Ploiești;44.947258698784985;25.988555131042588
 la-cocos-brasov;La Cocoș Brașov;Șoseaua Cristianului 7, Brașov;45.65632591566399;25.55930976455059
+
+irina-farm-filipestii-de-padure;Farmacia Irina Farm Filipeștii de Pădure;Str. Principala nr. 343A, Filipeștii de Pădure;44.99803957526945;25.7417443303452
+irina-farm-ditesti;Farmacia Irina Farm Dițești;106245 Dițești;44.98242376022027;25.7330669508383
+irina-farm-marginenii-de-jos;Farmacia Irina Farm Mărginenii de Jos;70 DJ720D, Mărginenii de Jos, Prahova;44.956310535252435;25.758140797609713
+irina-farm-bratasanca;Farmacia Irina Farm Brătășanca;289 DJ101P, Brătășanca, Prahova;44.93624247601373;25.80922928963256
+
+vital-force;Farmacia Vital Force;DJ720, Florești;45.02739407698978;25.79480632916327
+
 
 supermercato-astra;Magazinul SuperMercato Astra;Strada Zorilor 5, Brașov;45.63941928993784;25.62224371319587
 supermercato-grivitei;Magazinul SuperMercato Griviței;Bulevardul Griviței 50C, Brașov;45.65685001338749;25.598534438413505

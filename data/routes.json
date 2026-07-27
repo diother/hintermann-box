@@ -3,6 +3,19 @@
     "id": "toate",
     "name": "Toate",
     "locationIds": [
+      "irina-farm-bratasanca",
+      "irina-farm-marginenii-de-jos",
+      "vital-force",
+      "irina-farm-ditesti",
+      "irina-farm-filipestii-de-padure",
+
+      "ana-maria-baleni",
+      "ana-maria-dragomiresti",
+      "ana-maria-izvorul-rece",
+      "ana-maria-raul-colentina",
+      "ana-maria-berceni",
+      "ana-maria-industriilor",
+
       "ana-maria-filipestii-de-padure",
       "ana-maria-blejoi",
       "la-cocos-ploiesti-2",
@@ -72,15 +85,27 @@
       "ana-maria-vidra"
     ]
   }, {
+    "id": "bucuresti-ziua-0",
+    "name": "București Ziua 0",
+    "locationIds": [
+      "vital-force",
+      "irina-farm-filipestii-de-padure",
+      "ana-maria-filipestii-de-padure",
+      "irina-farm-ditesti",
+      "irina-farm-marginenii-de-jos",
+      "irina-farm-bratasanca",
+      "ana-maria-baleni",
+      "ana-maria-targoviste",
+      "ana-maria-dragomiresti",
+      "ana-maria-voinesti"
+    ]
+  }, {
     "id": "bucuresti-ziua-1",
     "name": "București Ziua 1",
     "locationIds": [
-      "ana-maria-filipestii-de-padure",
       "ana-maria-blejoi",
       "la-cocos-ploiesti-2",
       "la-cocos-ploiesti-1",
-      "ana-maria-targoviste",
-      "ana-maria-voinesti",
       "ana-maria-branistea",
       "ana-maria-lunguletu",
       "ana-maria-floresti",
